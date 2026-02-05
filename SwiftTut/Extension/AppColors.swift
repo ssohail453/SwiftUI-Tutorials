@@ -146,6 +146,17 @@ extension Color {
     static let uNutral9  = Color(AppColors.UNEUTRAL_9.rawValue)
     static let uNutral10  = Color(AppColors.UNEUTRAL_10.rawValue)
     
+    static let utertiary1  = Color(AppColors.TERTIARY_1.rawValue)
+    static let utertiary2  = Color(AppColors.TERTIARY_2.rawValue)
+    static let utertiary3  = Color(AppColors.TERTIARY_3.rawValue)
+    static let utertiary4  = Color(AppColors.TERTIARY_4.rawValue)
+    static let utertiary5  = Color(AppColors.TERTIARY_5.rawValue)
+    static let utertiary6  = Color(AppColors.TERTIARY_6.rawValue)
+    static let utertiary7  = Color(AppColors.TERTIARY_7.rawValue)
+    static let utertiary8  = Color(AppColors.TERTIARY_8.rawValue)
+    static let utertiary9  = Color(AppColors.TERTIARY_9.rawValue)
+    static let utertiary10  = Color(AppColors.TERTIARY_10.rawValue)
+    
     static let SecondaryRent  = ColorTheme()
     
     
@@ -304,6 +315,17 @@ enum AppColors: String{
     case UNEUTRAL_9  = "uNeutral-9"
     case UNEUTRAL_10 = "uNeutral-10"
     
+    case TERTIARY_1         = "tertiary-1"
+    case TERTIARY_2         = "tertiary-2"
+    case TERTIARY_3         = "tertiary-3"
+    case TERTIARY_4         = "tertiary-4"
+    case TERTIARY_5         = "tertiary-5"
+    case TERTIARY_6         = "tertiary-6"
+    case TERTIARY_7         = "tertiary-7"
+    case TERTIARY_8         = "tertiary-8"
+    case TERTIARY_9         = "tertiary-9"
+    case TERTIARY_10        = "tertiary-10"
+    
     var fontColor: Color {
         switch self {
             // Primary
@@ -449,6 +471,17 @@ enum AppColors: String{
         case .UNEUTRAL_8:  return Color.uNutral8
         case .UNEUTRAL_9:  return Color.uNutral9
         case .UNEUTRAL_10: return Color.uNutral10
+
+        case .TERTIARY_1:  return Color.utertiary1
+        case .TERTIARY_2:  return Color.utertiary2
+        case .TERTIARY_3:  return Color.utertiary3
+        case .TERTIARY_4:  return Color.utertiary4
+        case .TERTIARY_5:  return Color.utertiary5
+        case .TERTIARY_6:  return Color.utertiary6
+        case .TERTIARY_7:  return Color.utertiary7
+        case .TERTIARY_8:  return Color.utertiary8
+        case .TERTIARY_9:  return Color.utertiary9
+        case .TERTIARY_10: return Color.utertiary10
         }
     }
     
