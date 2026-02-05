@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SheetView: View {
-    @State var sheetIsPresented: Bool = false
+    @State var sheetIsPresented: Bool = true
     var body: some View {
         VStack {
             
@@ -18,7 +18,7 @@ struct SheetView: View {
                     sheetIsPresented.toggle()
                 }
                 .sheet(isPresented: $sheetIsPresented) {
-                    if #available(iOS 16.4, *) {
+                    if #available(iOS 18, *) {
                         HowItWorksSheetView(
                             viewHeight: 200,
                             dataArray: ["Sohail", "Fahad", "Zubair", "Arif", "Fahad", "Zubair", "Arif", "Fahad", "Zubair", "Arif"]
@@ -31,6 +31,7 @@ struct SheetView: View {
                         .presentationCompactAdaptation(
                             horizontal: .none,
                             vertical: .none)
+                        .presentationSizing(.fitted)
                     } else {
                         // Fallback on earlier versions
                         HowItWorksSheetView(
